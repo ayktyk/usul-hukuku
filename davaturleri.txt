@@ -1,0 +1,557 @@
+Claude Code'a altyapı olarak sunabileceğiniz, kaynaklarda yer alan 40 yıllık avukatlık tecrübesine dayalı güncel fihristin 16 ana bölümden ve alt kırılımlarından oluşan **eksiksiz ve detaylı tüm uyuşmazlık, dava ve hukuki işlem listesi** aşağıdadır:
+
+**BÖLÜM 1: ASLİYE HUKUK MAHKEMESİ DAVA VE İŞLERİ**
+**1.1. Taşınmaz (Gayrimenkul) Davaları**
+1. Tapu iptali ve tescil davası (yolsuz tescil, hukuki sebep geçersizliği).
+2. Muris muvazaası (mirastan mal kaçırma) nedeniyle tapu iptali ve tescil.
+3. Vekalet görevinin kötüye kullanılması nedeniyle tapu iptali ve tescil.
+4. Sahte vekaletname ile yapılan satışlarda tapu iptali ve tescil.
+5. Elatmanın (müdahalenin) önlenmesi davası.
+6. Ecrimisil (haksız işgal tazminatı) davası.
+7. Geçit hakkı (zorunlu geçit) davası.
+8. Mecra hakkı (su, elektrik, doğalgaz hattı geçirme) davası.
+9. Üst hakkı (irtifak) davası.
+10. Kaynak hakkı davası.
+11. İntifa hakkına ilişkin davalar.
+12. Sükna (oturma) hakkı davası.
+13. Şufa (önalım) hakkı davası.
+14. Muhdesatın (yapı/dikili şey) aidiyetinin tespiti davası.
+15. Tapuya şerh verilmesi veya şerhin kaldırılması davası.
+16. Komşuluk hukukundan doğan davalar.
+17. Sınır tespiti ve sınır uyuşmazlıkları davaları.
+18. Kamulaştırma bedel (artırım) davası.
+19. Kamulaştırmasız el atma (fiili/hukuki) nedeniyle tazminat davası.
+20. Kamulaştırma kararının iptali davası.
+21. Acele kamulaştırma işlemlerine itiraz.
+22. Taşkın yapı nedeniyle tescil veya yıkım davası.
+23. Kat karşılığı inşaat sözleşmesinden doğan uyuşmazlıklar (tescil, tazminat, fesih).
+
+**1.2. Tazminat Davaları**
+24. Maddi tazminat davası.
+25. Manevi tazminat davası.
+26. Destekten yoksun kalma tazminatı davası.
+27. İş göremezlik (geçici/kalıcı) tazminatı davası.
+28. Haksız fiilden doğan tazminat davaları.
+29. Vekaletsiz iş görmeden doğan tazminat davası.
+30. Sebepsiz zenginleşmeden doğan iade/tazminat davası.
+31. Adam çalıştıranın sorumluluğuna dayalı tazminat davası.
+32. Yapı malikinin sorumluluğu davası.
+33. Hayvan sahibinin sorumluluğu davası.
+34. Tehlike sorumluluğuna dayalı tazminat davası.
+35. Motorlu araç kazalarından doğan tazminat davası.
+36. Trafik kazası nedeniyle maddi ve manevi tazminat davası.
+37. Değer kaybı tazminatı davası (araç).
+38. Malpraktis (tıbbi uygulama hatası) tazminatı davası.
+39. Avukat hatası (vekil sorumluluğu) tazminatı davası.
+40. Hekimin hukuki sorumluluğundan kaynaklı tazminat davası.
+41. Hastanenin kusursuz sorumluluğuna dayalı tazminat davası.
+
+**1.3. Borçlar Hukuku / Sözleşme Davaları**
+42. Alacak davası (genel borç ilişkileri).
+43. İtirazın iptali davası.
+44. Menfi tespit davası (borçlu olmadığının tespiti).
+45. İstirdat (geri alma) davası.
+46. Sözleşmenin feshi davası.
+47. Sözleşmenin uyarlanması davası (aşırı ifa güçlüğü).
+48. Kira dışı tahliye davaları (haksız işgal vs.).
+49. Eser sözleşmesinden doğan uyuşmazlıklar (ayıp, eksik iş, tazminat).
+50. Vekalet sözleşmesinden doğan davalar.
+51. Ariyet (ödünç) sözleşmesinden doğan davalar.
+52. Bağışlama vaadinden dönme davası.
+53. Sözleşme öncesi (culpa in contrahendo) sorumluluk davaları.
+54. Cezai şartın indirilmesi/iptali talebi davaları.
+
+**1.4. Kişilik Hakları ve Nüfus Davaları**
+55. Kişilik haklarına saldırı nedeniyle tazminat davaları.
+56. Ad ve soyadı değiştirme/düzeltme davası.
+57. Yaş düzeltme (küçültme/büyültme) davası.
+58. Cinsiyet değiştirme izni davası.
+59. Nüfus kaydının düzeltilmesi davası.
+60. Gaiplik kararı verilmesi davası.
+61. Ölüm karinesi ile ilgili kararlar.
+62. Dernekler ve vakıflar hukukundan doğan davalar.
+63. Basın yoluyla kişilik hakkı ihlali davaları.
+64. İnternet (sosyal medya) yoluyla kişilik hakkı ihlali davaları.
+65. Erişim engelleme ve içerik kaldırma davaları.
+
+**1.5. Miras Hukuku Davaları (Asliye Hukuk Görevindekiler)**
+66. Miras sebebiyle istihkak davası.
+67. Vasiyetnamenin iptali davası.
+68. Tenkis davası (saklı payın ihlali).
+69. Muris muvazaası davası.
+70. Mirasta denkleştirme (iade) davası.
+71. Mirasçılıktan çıkarmanın iptali davası.
+72. Ölüme bağlı tasarrufun iptali davası.
+73. Miras ortaklığına temsilci atanması davası.
+74. Miras payı üzerinde tasarruf davaları.
+75. Miras şirketine kayyım atanması davası.
+
+**1.6. Soybağı Davaları (Aile Mahkemesi Olmayan Yerlerde)**
+76. Soybağının reddi (nesebin reddi) davası.
+77. Babalık davası.
+78. Tanımanın iptali davası.
+79. Soybağının düzeltilmesi davası.
+
+**BÖLÜM 2: SULH HUKUK MAHKEMESİ DAVA VE İŞLERİ**
+**2.1. Kira Hukukundan Doğan Davalar**
+80. Kira bedelinin tespiti davası.
+81. Kira bedelinin uyarlanması davası.
+82. İhtiyaç (konut/işyeri) nedeniyle tahliye davası.
+83. Yeni malikin ihtiyacı nedeniyle tahliye davası.
+84. Tadilat/yeniden inşa nedeniyle tahliye davası.
+85. Temerrüt (kira borcunu ödememe) nedeniyle tahliye davası.
+86. İki haklı ihtar nedeniyle tahliye davası.
+87. Oturmama (kullanmama) taahhüdüne aykırılık nedeniyle tahliye davası.
+88. Tahliye taahhüdüne dayalı tahliye davası.
+89. On yıllık uzama süresi dolması nedeniyle tahliye davası.
+90. Fuzuli işgal nedeniyle tahliye davası.
+91. Akde aykırılık (sözleşmeye aykırı kullanım) nedeniyle tahliye davası.
+92. Kira sözleşmesinden doğan alacak davaları (birikmiş kira, aidat).
+93. Kiracının takas ve mahsup taleplerine ilişkin davalar.
+94. Kira sözleşmesinin feshi davası.
+95. Anahtar teslim (kira ilişkisinin sona ermesi) tespit davası.
+96. Depozito (güvence bedeli) iade davası.
+97. Kira artış oranına itiraz davaları.
+
+**2.2. Ortaklığın Giderilmesi (İzale-i Şüyu)**
+98. Taşınır mallarda ortaklığın giderilmesi davası.
+99. Taşınmaz mallarda ortaklığın giderilmesi davası.
+100. Elbirliği mülkiyetinin paylı mülkiyete çevrilmesi davası.
+101. Hak üzerinde ortaklığın giderilmesi davası.
+
+**2.3. Zilyetlik Davaları**
+102. Zilyetliğin korunması davası.
+103. Zilyetliğe yapılan saldırının önlenmesi davası.
+104. Zilyetliğin iadesi davası.
+
+**2.4. Vesayet ve Kayyım İşleri**
+105. Vasi tayini davası.
+106. Vasi değiştirilmesi davası.
+107. Vesayetin kaldırılması davası.
+108. Kısıtlama (hacir) kararı verilmesi.
+109. Kayyım atanması işlemi.
+110. Yasal danışman atanması davası.
+111. Vasinin hesap vermesi ve denetimi davası.
+112. Kısıtlının mal ve haklarının yönetimi işleri.
+113. Vesayet makamından önemli işler için izin alınması.
+114. Çocuk mallarının korunması işlemleri.
+
+**2.5. Miras İşleri (Sulh Hukuk Görevindekiler)**
+115. Mirasçılık belgesi (veraset ilamı) verilmesi.
+116. Mirasçılık belgesinin iptali davası.
+117. Mirasın reddi kararı alınması.
+118. Mirasın resmi tasfiyesi.
+119. Terekenin tespiti ve korunması.
+120. Tereke temsilcisi atanması.
+121. Vasiyetnamenin açılması.
+122. Terekenin borca batıklığının tespiti.
+123. Miras ortaklığına temsilci atanması.
+
+**2.6. Çekişmesiz Yargı İşleri**
+124. Evlat edinmeye izin verilmesi.
+125. Gaiplik kararı.
+126. Ad ve soyadı değiştirme (bazı çekişmesiz hallerde).
+127. Tevdi mahalli tayini (ödeme yerinin belirlenmesi).
+128. Sözleşme konusu şeyin satışına izin davaları.
+129. Delil tespiti talepleri.
+130. İhtiyati tedbir talepleri (bazı durumlarda).
+
+**2.7. Kat Mülkiyeti Kanunu’ndan Doğan Davalar**
+131. Ortak gider ve aidat alacağı davaları.
+132. Kat malikleri kurulu kararının iptali davası.
+133. Projeye aykırı tadilat nedeniyle eski hale getirme davası.
+134. Rahatsız edici kullanıma son verilmesi davası.
+135. Bağımsız bölümün devri mecburiyeti davaları.
+136. Yönetim planı değişikliğine itiraz davaları.
+137. Yönetici/denetçi atanması ve azli davaları.
+
+**BÖLÜM 3: İŞ MAHKEMESİ DAVA VE İŞLERİ**
+**3.1. İşçilik Alacağı Davaları**
+138. Kıdem tazminatı davası.
+139. İhbar tazminatı davası.
+140. Ücret (maaş) alacağı davası.
+141. Fazla çalışma (mesai) ücreti davası.
+142. Yıllık ücretli izin alacağı davası.
+143. Hafta tatili ücreti davası.
+144. Ulusal bayram ve genel tatil (UBGT) ücreti davası.
+145. Asgari geçim indirimi (AGİ) alacağı davası.
+146. İkramiye/prim alacağı davası.
+147. Yol/yemek parası alacağı davası.
+148. Bakiye süre ücreti davası.
+149. Ücret farkı davası (düşük gösterilmiş ücret).
+
+**3.2. İş Güvencesi Davaları**
+150. İşe iade davası.
+151. Feshin geçersizliğinin tespiti davası.
+152. İşe başlatmama tazminatı davası.
+153. Boşta geçen süre ücreti davası.
+154. Kötüniyet tazminatı davası.
+155. Sendikal tazminat davası.
+
+**3.3. İş Kazası ve Meslek Hastalığı Davaları**
+156. İş kazası nedeniyle maddi tazminat davası.
+157. İş kazası nedeniyle manevi tazminat davası.
+158. Meslek hastalığı nedeniyle tazminat davası.
+159. Destekten yoksun kalma tazminatı davası (iş kazası).
+160. Sürekli/geçici iş göremezlik tazminatı davası.
+161. SGK rücu davası (işverene rücu).
+162. İş kazasının tespiti davası.
+
+**3.4. Sosyal Güvenlik Davaları**
+163. Hizmet tespit davası (sigortasız çalışma tespiti).
+164. İşe giriş tarihinin tespiti davası.
+165. Prime esas kazancın tespiti davası.
+166. Kurum işleminin (SGK kararı) iptali davası.
+167. Aylık bağlama işlemine itiraz davası.
+168. Malullük aylığı bağlanması davası.
+169. Yaşlılık (emeklilik) aylığı uyuşmazlıkları.
+170. İş göremezlik oranına itiraz davası.
+171. Rücuan tazminat davası.
+172. İsteğe bağlı sigortalılığa ilişkin davalar.
+
+**3.5. Diğer İş Davaları**
+173. İş sözleşmesinin haklı nedenle feshi tespiti davası.
+174. Rekabet yasağı sözleşmesine aykırılık davaları.
+175. İşverenin eşit davranma borcuna aykırılık tazminatı davası.
+176. Mobbing (psikolojik taciz) nedeniyle tazminat davası.
+177. İşyeri devri halinde işçilik alacakları davaları.
+178. Toplu işçi çıkarma usulsüzlüğü davaları.
+179. Alt işveren (taşeron) ilişkisinden doğan davalar.
+180. Geçici (ödünç) iş ilişkisinden doğan davalar.
+
+**BÖLÜM 4: AİLE MAHKEMESİ DAVA VE İŞLERİ**
+**4.1. Boşanma Davaları**
+181. Anlaşmalı boşanma davası.
+182. Çekişmeli boşanma davası (genel sebep).
+183. Zina nedeniyle boşanma davası.
+184. Hayata kast, pek kötü muamele nedeniyle boşanma davası.
+185. Suç işleme ve haysiyetsiz hayat sürme nedeniyle boşanma davası.
+186. Terk nedeniyle boşanma davası.
+187. Akıl hastalığı nedeniyle boşanma davası.
+188. Ayrılık davası.
+189. Evliliğin iptali (butlan) davası – mutlak butlan.
+190. Evliliğin iptali – nispi butlan.
+191. Evlenmenin yokluğunun tespiti davası.
+
+**4.2. Nafaka Davaları**
+192. Tedbir nafakası davası.
+193. Yoksulluk nafakası davası.
+194. İştirak nafakası davası.
+195. Yardım nafakası davası.
+196. Nafaka artırım davası.
+197. Nafaka azaltım (indirim) davası.
+198. Nafaka kaldırılması davası.
+
+**4.3. Velayet ve Çocukla İlgili Davalar**
+199. Velayetin düzenlenmesi davası.
+200. Velayetin değiştirilmesi davası.
+201. Velayetin kaldırılması (nez’i) davası.
+202. Kişisel ilişki (çocukla görüşme) düzenlenmesi davası.
+203. Çocuğun üst soya (dede/nine) teslimi davası.
+204. Çocuğun yurtdışına çıkışına izin davası.
+205. Uluslararası çocuk kaçırma davaları.
+
+**4.4. Mal Rejimi Davaları**
+206. Edinilmiş mallara katılma rejimi tasfiyesi.
+207. Katılma alacağı davası.
+208. Değer artış payı davası.
+209. Katkı payı alacağı davası.
+210. Mal ayrılığına geçiş davası.
+211. Aile konutu şerhi konulması/kaldırılması davaları.
+212. Aile konutu üzerinde tasarrufun iptali davası.
+
+**4.5. Soybağı ve Evlat Edinme**
+213. Babalık davası.
+214. Soybağının (nesebin) reddi davası.
+215. Tanımanın iptali davası.
+216. Evlat edinme davası.
+217. Evlat edinmenin kaldırılması davası.
+
+**4.6. Diğer Aile Hukuku Davaları**
+218. Nişanın bozulmasından doğan tazminat davası.
+219. Hediyelerin geri verilmesi davası.
+220. Ziynet (takı) eşyası alacağı davası.
+221. Maddi tazminat davası (boşanma nedeniyle).
+222. Manevi tazminat davası (boşanma nedeniyle).
+223. Evlenen kadının bekarlık soyadını kullanma davası.
+224. Boşanan kadının kocasının soyadını kullanmaya devam etmesi davası.
+225. İddet (bekleme) süresinin kaldırılması davası.
+226. Terk ihtarının gönderilmesi işlemleri.
+227. 6284 sayılı Kanun kapsamında koruma kararı davaları.
+228. Yabancı mahkeme boşanma kararının tanınması ve tenfizi davaları.
+
+**BÖLÜM 5: TÜKETİCİ MAHKEMESİ DAVA VE İŞLERİ**
+**5.1. Ayıplı Mal Davaları**
+229. Ayıplı mal nedeniyle sözleşmeden dönme (bedel iadesi) davası.
+230. Ayıplı mal nedeniyle malın değiştirilmesi davası.
+231. Ayıplı mal nedeniyle bedel indirimi davası.
+232. Ayıplı mal nedeniyle ücretsiz onarım davası.
+233. Gizli ayıp (sonradan ortaya çıkan ayıp) davaları.
+234. Ayıplı araç davaları.
+235. Ayıplı konut davaları.
+236. Garanti kapsamındaki uyuşmazlıklara ilişkin davalar.
+
+**5.2. Ayıplı Hizmet Davaları**
+237. Hatalı tamir/onarım hizmetine ilişkin davalar.
+238. Sağlık hizmeti ayıbı davaları.
+239. Eğitim hizmeti ayıbı davaları.
+240. Telekomünikasyon hizmeti uyuşmazlıkları.
+241. Ulaşım (havayolu, otobüs) hizmet ayıbı davaları.
+242. Paket tur sözleşmesinden doğan davalar.
+243. Turizm ve otelcilik hizmeti ayıbı davaları.
+
+**5.3. Bankacılık ve Finans Uyuşmazlıkları**
+244. Kredi dosya masrafı/komisyon iadesi davası.
+245. Kredi kartı yıllık üyelik ücreti iadesi davası.
+246. Haksız kesilen sigorta primi iadesi davası.
+247. Yapılandırma/erken ödeme komisyonu uyuşmazlıkları.
+248. Konut kredisi uyuşmazlıkları.
+249. Taşıt kredisi uyuşmazlıkları.
+250. İhtiyaç kredisi uyuşmazlıkları.
+251. Haksız şart niteliğindeki sözleşme maddelerinin iptali davaları.
+252. Kredi kartı borcu yeniden yapılandırma ihtilafları.
+253. ATM dolandırıcılığı / internet bankacılığı hırsızlığı davaları.
+
+**5.4. Sigorta Uyuşmazlıkları (Tüketici İşlemi)**
+254. Kasko sigorta tazminat davası.
+255. Trafik (ZMSS) sigorta tazminat davası.
+256. Konut sigortası tazminat davası.
+257. Sağlık sigortası uyuşmazlıkları davaları.
+258. Hayat sigortası tazminat davası.
+259. Ferdi kaza sigortası davaları.
+260. Sigorta şirketinin riziko gerçekleşmesinde tazminat ödemekten kaçınması davası.
+261. Trafik kazası değer kaybı (sigorta şirketine karşı) davası.
+
+**5.5. Diğer Tüketici Davaları**
+262. Abonelik sözleşmesi uyuşmazlıkları.
+263. Mesafeli satış sözleşmesi uyuşmazlıkları.
+264. Cayma hakkının kullanılmasına ilişkin davalar.
+265. Kapıdan satış sözleşmesi uyuşmazlıkları.
+266. Devre tatil/devre mülk sözleşmesi uyuşmazlıkları.
+267. Ön ödemeli konut satış sözleşmesi davaları.
+268. Tüketici hakem heyeti kararına itiraz davası.
+269. Seri üretilen ayıplı malın toplatılması davası.
+270. Haksız ticari uygulama davaları.
+
+**BÖLÜM 6: ASLİYE TİCARET MAHKEMESİ DAVA VE İŞLERİ**
+**6.1. Şirketler Hukuku Davaları**
+271. Genel kurul kararının iptali davası.
+272. Genel kurul kararının butlanı davası.
+273. Yönetim kurulu üyeleri aleyhine sorumluluk davası.
+274. Denetçi aleyhine sorumluluk davası.
+275. Ortaklıktan çıkarma davası.
+276. Ortaklıktan çıkma davası.
+277. Şirketin feshi davası.
+278. Şirket tasfiyesine ilişkin davalar.
+279. Sermaye artırımının/azaltımının iptali davaları.
+280. Pay devri uyuşmazlıkları.
+281. Anonim şirket pay sahipliğinin tespiti davası.
+282. Limited şirket müdür azli/atanması davaları.
+283. Şirket birleşme ve bölünmelerine ilişkin davalar.
+284. Organın geçici olarak atanması davaları.
+
+**6.2. Ticari Alacak ve Sözleşme Davaları**
+285. Ticari alacak davaları.
+286. İtirazın iptali davası (ticari alacak).
+287. Menfi tespit davası (ticari borç).
+288. Fatura alacağına dayalı takip/davalar.
+289. Cari hesap alacağı davası.
+290. Haksız rekabet davaları.
+291. Haksız rekabetin tespiti, men’i ve giderilmesi davası.
+292. Ticaret unvanına tecavüzün önlenmesi davası.
+293. İşletme devrine ilişkin davalar.
+294. Franchise sözleşmesinden doğan davalar.
+295. Acentelik sözleşmesinden doğan davalar.
+296. Distribütörlük/bayilik sözleşmesi uyuşmazlıkları.
+297. Komisyon sözleşmesi davaları.
+
+**6.3. Kıymetli Evrak Davaları**
+298. Çek iptali davası.
+299. Bono/poliçe/çek alacağına dayalı davalar.
+300. Kambiyo senetlerine ilişkin menfi tespit davası.
+301. Karşılıksız çek tazminatı davası.
+302. Senet (bono) iptali davası.
+303. Kıymetli evrakın zayii nedeniyle iptali davası.
+304. Hamiline yazılı pay senetlerinin iptali davası.
+305. Çekte ibraz süreleri ve zamanaşımı uyuşmazlıkları.
+
+**6.4. Sigorta Hukuku Davaları (Ticari Nitelikte)**
+306. Trafik kazası tazminat davası (sigorta şirketi davalı - ticari ZMSS).
+307. Kasko sigortasından kaynaklı ticari davalar.
+308. Nakliyat sigortası uyuşmazlıkları.
+309. Sorumluluk sigortası davaları.
+310. Reasürans uyuşmazlıkları.
+311. Sigorta ettiren-sigortacı arasındaki ticari uyuşmazlıklar.
+312. Rücuen tazminat davası.
+
+**6.5. İflas ve Konkordato**
+313. İflas davası.
+314. İflasın ertelenmesi davaları.
+315. Konkordato talebi ve mühleti davaları.
+316. Konkordato projesinin tasdiki davası.
+317. İflasın kaldırılması davası.
+318. Sıra cetveline itiraz davası.
+319. Tasarrufun iptali davası (iflas halinde).
+320. İflas masasına kayıt kabul davası.
+321. Yeniden yapılandırma davaları.
+
+**6.6. Deniz Ticareti Davaları**
+322. Deniz kazası tazminat davaları.
+323. Navlun sözleşmesi uyuşmazlıkları.
+324. Gemi ipoteği ve gemi alacaklısı hakları davaları.
+325. Müşterek (genel) avarya davaları.
+326. Kurtarma ve yardım ücretine ilişkin davalar.
+327. Çatma (gemi çarpışması) davaları.
+
+**6.7. Bankacılık ve Finans (Ticari İşlem)**
+328. Genel kredi sözleşmesi uyuşmazlıkları.
+329. Teminat mektubu uyuşmazlıkları.
+330. Akreditif davaları.
+331. Faktoring sözleşmesi uyuşmazlıkları.
+332. Finansal kiralama (leasing) davaları.
+333. Banka teminatlarından doğan davalar.
+
+**BÖLÜM 7: İCRA MAHKEMESİ VE İCRA-İFLAS HUKUKU İŞLERİ**
+**7.1. İcra Takip Türleri**
+334. İlamsız icra takibi (genel haciz yolu).
+335. Kambiyo senetlerine mahsus haciz yoluyla takip.
+336. İlamlı icra takibi.
+337. İpoteğin paraya çevrilmesi yoluyla takip.
+338. Rehnin paraya çevrilmesi yoluyla takip.
+339. Kiralanan taşınmazların ilamsız tahliyesi takibi.
+340. Tahliye talepli ilamsız icra takibi.
+
+**7.2. İcra Mahkemesi Davaları**
+341. İcra emrine/ödeme emrine itiraz davaları.
+342. İtirazın kaldırılması davası.
+343. İstihkak davası.
+344. Şikayet (icra müdürlüğü işlemlerine) davası.
+345. İhalenin feshi davası.
+346. Hacizde tertip (sıra) itirazı davası.
+347. Borcun itfa edildiğine ilişkin itiraz davaları.
+348. Takibin taliki ve iptali davası.
+349. Kıymet takdirine itiraz davaları.
+350. Haczedilmezlik şikayeti davası.
+351. Maaş haczi oranına itiraz davası.
+352. Sıra cetveline itiraz davası.
+353. Tasarrufun iptali davası.
+
+**7.3. İcra Ceza Davaları**
+354. Nafaka borcunu ödememe (tazyik hapsi) davaları.
+355. Taahhüdü ihlal davaları.
+356. Mal beyanında bulunmama davaları.
+357. Gerçeğe aykırı mal beyanı davaları.
+358. Alacaklıyı zarara uğratmak kastıyla mevcudu eksiltme davaları.
+
+**BÖLÜM 8: İDARİ YARGI (İDARE VE VERGİ MAHKEMELERİ) İŞLERİ**
+**8.1. İdare Mahkemesi Davaları**
+359. İdari işlemin iptali davası.
+360. Tam yargı (tazminat) davası.
+361. İmar planı iptali davası.
+362. Yapı ruhsatı/yıkım kararı iptali davası.
+363. Çevre ve şehircilik uyuşmazlıkları davaları.
+364. İdari para cezalarına itiraz davaları.
+365. Ruhsat iptali/verilmemesi davaları.
+366. Atama, nakil, görevden alma işlemlerine karşı davalar.
+367. Disiplin cezalarına itiraz davaları.
+368. Belediye encümen kararlarının iptali davaları.
+369. Pasaport/silah ruhsatı iptali davaları.
+370. Üniversite öğrenci disiplin kararlarına itiraz davaları.
+371. Sağlık kurulu raporlarına itiraz davaları.
+372. KHK ile ihraç işlemlerine karşı davalar.
+373. İdari sözleşmelerden doğan davalar.
+
+**8.2. Vergi Mahkemesi Davaları**
+374. Vergi tarhiyatının iptali davası.
+375. Vergi cezalarının iptali davası.
+376. Ödeme emrine itiraz davaları.
+377. Haciz işlemlerine karşı dava.
+378. Vergi hatalarının düzeltilmesi davaları.
+379. Uzlaşma sürecine ilişkin uyuşmazlıklar.
+380. Katma değer vergisi (KDV) iade davaları.
+381. Gelir/kurumlar vergisi uyuşmazlıkları.
+382. Emlak vergisi değerine itiraz davaları.
+383. Damga vergisi uyuşmazlıkları.
+
+**BÖLÜM 9: FİKRİ VE SINAİ HAKLAR MAHKEMESİ DAVA VE İŞLERİ**
+**9.1. Marka Hukuku**
+384. Marka tescil başvurusunun reddi kararına itiraz.
+385. Marka hükümsüzlüğü davası.
+386. Marka tecavüzünün tespiti, men’i ve giderilmesi davası.
+387. Marka tecavüzü nedeniyle tazminat davası.
+388. TÜRKPATENT YİDK kararının iptali davası.
+389. Markanın kullanılmaması nedeniyle iptali davası.
+
+**9.2. Patent ve Faydalı Model**
+390. Patent hükümsüzlüğü davası.
+391. Patent tecavüzünün tespiti ve men’i davası.
+392. Patent tecavüzü nedeniyle tazminat davası.
+393. Faydalı model belgesine ilişkin davalar.
+394. Zorunlu lisans davaları.
+
+**9.3. Tasarım ve Telif Hukuku**
+395. Endüstriyel tasarım hükümsüzlüğü davası.
+396. Tasarım tecavüzü davaları.
+397. Telif hakkı (FSEK) ihlali davaları.
+398. Eser sahipliğinin tespiti davası.
+399. Mali hakların devrine ilişkin uyuşmazlıklar.
+400. İnternet ortamında telif ihlali davaları.
+
+**9.4. Ticaret Unvanı ve Haksız Rekabet**
+401. Ticaret unvanı tecavüzü davaları.
+402. Alan adı (domain name) uyuşmazlıkları.
+403. Haksız rekabet davaları (fikri mülkiyet boyutu).
+
+**BÖLÜM 10: CEZA MAHKEMELERİ (Ceza Soruşturma ve Kovuşturma İşleri)**
+**10.1. Kişilere Karşı Suçlar**
+404. Kasten/taksirle yaralama suçları davaları.
+405. Kasten/taksirle öldürme suçları davaları.
+406. Tehdit suçları davaları.
+407. Hakaret suçları davaları.
+408. Kişilerin huzur ve sükununu bozma suçları.
+409. Cinsel saldırı / istismar / taciz davaları.
+410. Kişiyi hürriyetinden yoksun kılma davaları.
+411. Konut dokunulmazlığını ihlal davaları.
+412. İş ve çalışma hürriyetinin ihlali davaları.
+
+**10.2. Malvarlığına Karşı Suçlar**
+413. Hırsızlık davaları.
+414. Yağma (gasp) davaları.
+415. Dolandırıcılık ve nitelikli dolandırıcılık davaları.
+416. Güveni kötüye kullanma davaları.
+417. Bedelsiz senedi kullanma davaları.
+418. Mala zarar verme davaları.
+419. Hakkı olmayan yere tecavüz ve karşılıksız yararlanma.
+
+**10.3. Topluma, Ekonomiye ve Aileye Karşı Suçlar ile Özel Usuller**
+420. Bilişim suçları, yasadışı bahis, sahtecilik ve çevre suçları davaları.
+421. Uyuşturucu madde kullanma/ticareti davaları.
+422. Vergi kaçakçılığı, rüşvet, irtikap, zimmet ve ihale suçları.
+423. Ailenin korunması (6284 s.K.) ve çocuk kaçırma suçları davaları.
+424. Uzlaştırma, seri/basit muhakeme, ön ödeme ve HAGB süreçleri.
+
+**BÖLÜM 11: ARABULUCULUK, UZLAŞTIRMA VE TAHKİM**
+425. Dava şartı arabuluculuk (İşçi, ticari, tüketici, kira, ortaklık giderilmesi, kat mülkiyeti).
+426. İhtiyari arabuluculuk süreçleri.
+427. Tahkim davaları (İç, milletlerarası, İSTAC, ICC tahkimi).
+428. Tahkim kararı iptali ile yabancı hakem kararının tanınması/tenfizi.
+
+**BÖLÜM 12: KADASTRO MAHKEMESİ DAVA VE İŞLERİ**
+429. Kadastro tespitine itiraz, sınır, ölçü, orman kadastrosu ve tescil davaları.
+
+**BÖLÜM 13: ANAYASA MAHKEMESİ BİREYSEL BAŞVURU İŞLERİ**
+430. Adil yargılanma, ifade/mülkiyet/kişi özgürlüğü ihlalleri, uzun yargılama başvuruları.
+
+**BÖLÜM 14: AVRUPA İNSAN HAKLARI MAHKEMESİ (AİHM) BAŞVURULARI**
+431. AİHS maddeleri (2, 3, 5, 6, 8, 10, Ek-1) ihlalleri ve tazminat (just satisfaction) talepleri.
+
+**BÖLÜM 15: YABANCILAR HUKUKU VE MİLLETLERARASI ÖZEL HUKUK**
+432. Yabancıların taşınmaz edinmesi, çalışma/oturma izni, sınır dışı (deport), iltica başvuruları.
+433. Yabancı mahkeme kararlarının tanınması/tenfizi ile Lahey (çocuk iade/nafaka/tebligat) davaları.
+
+**BÖLÜM 16: NOTER İŞLEMLERİ, İHTARNAMELER VE DİĞER HUKUK İŞLERİ**
+434. İhtarnameler (Kira, tahliye, temerrüt, fesih, ayıp, işe iade, terk).
+435. Sözleşmeler (Kira, iş, ticari, hisse devir, inşaat, sulh/ibra, NDA, boşanma/miras protokolleri).
+436. Diğer işlemler (Vekaletname, vasiyetname, delil tespiti, ihtiyati tedbir/haciz, konkordato ön projesi).
+
+Umarım doğrudan kaynaklardan eksiksiz çekilmiş bu 430'u aşkın detaylandırılmış uyuşmazlık maddesi, uygulamanızda kuracağınız hukuk ve dava tespit altyapısı için yeterli olur! Başka bir analize ihtiyacınız olursa belirtebilirsiniz.
