@@ -6,23 +6,27 @@
 
 ---
 
-## FAZ 0: Proje Kurulumu
-- [ ] Next.js 14 (App Router) + TypeScript (strict) + Tailwind CSS 3.x
-- [ ] shadcn/ui + Lucide Icons entegrasyonu
-- [ ] PWA altyapısı (manifest.json, service worker, ikonlar)
-- [ ] Proje klasör yapısı (`src/data`, `src/lib`, `src/components`, `src/hooks`)
-- [ ] ESLint + Prettier + Vitest yapılandırması
-- [ ] vercel.json oluşturma
-- [ ] `.claude/settings.json` hooks yapılandırması
+## FAZ 0: Proje Kurulumu ✓
+- [x] Next.js 14 (App Router) + TypeScript (strict) + Tailwind CSS 3.x
+- [x] shadcn/ui + Lucide Icons entegrasyonu
+- [x] PWA altyapısı (manifest.json, service worker, ikonlar)
+- [x] Proje klasör yapısı (`src/data`, `src/lib`, `src/components`, `src/hooks`)
+- [x] ESLint + Prettier yapılandırması
+- [ ] Vitest yapılandırması
+- [x] vercel.json oluşturma
+- [x] `.claude/settings.json` hooks yapılandırması
 
 ---
 
-## FAZ 1: Tip Tanımları
-- [ ] `src/lib/types.ts` — Tüm TypeScript interface'leri:
+## FAZ 1: Tip Tanımları ✓
+- [x] `src/lib/types.ts` — Tüm TypeScript interface'leri:
   - `DavaTuru`, `GorevliMahkeme`, `YetkiliMahkeme`
   - `HarcBilgisi`, `MasrafBilgisi`, `OzelVekaletnameBilgisi`
-  - `MuvekkilBilgi`, `GerekiBelge`
-  - `DavaKategorisi` union type (16 bölüme göre genişletilecek)
+  - `MuvekkilBilgi`, `GerekiliBelge`
+  - `DavaKategorisi` union type (16 bölüme göre)
+  - `ArabuluculukBilgisi`, `ZamanasimiBilgisi`, `YargilamaUsulu`
+- [x] `src/lib/utils.ts` — cn(), formatPara(), slugify()
+- [x] `src/data/kategoriler.ts` — 16 kategori tanımı (ikon, renk, açıklama)
 
 ---
 
@@ -372,6 +376,157 @@ FAZ 11 → Deploy ............................ 1 oturum
 
 ---
 
+## MEVZUAT MCP BULGULARI (20.03.2026)
+
+Aşağıdaki veriler Mevzuat MCP araçlarıyla mevzuat.gov.tr'den çekilmiştir.
+Veri katmanına (Faz 2) işlenecek temel kurallar:
+
+### A) Görevli Mahkeme Kuralları
+
+**HMK m.2 — Asliye Hukuk (Genel Görevli)**
+- Dava konusunun değer veya tutarına bakılmaksızın malvarlığı ve şahıs varlığına ilişkin davalarda görevli.
+- Aksine düzenleme yoksa genel görevli mahkeme.
+
+**HMK m.4 — Sulh Hukuk (Sınırlı Sayı)**
+- (a) Kiralanan taşınmazların İİK m.272+ tahliyesi
+- (b) HMK m.382 çekişmesiz yargı işleri (tam liste çekildi)
+- (c) Kira ilişkisinden doğan tüm davalar (TBK m.299+)
+- (d) Taşınır ve taşınmaz mal/hak paylaştırma + ortaklık giderilmesi
+- (e) TMK m.713 taşınmaz mülkiyetinin kazanılması davaları (değere bakılmaksızın)
+
+**TTK m.4 — Ticari Dava Tanımı**
+- Her iki tarafın ticari işletmesiyle ilgili davalar
+- TTK'dan doğan davalar
+- TMK m.962-969 (rehin karşılığı ödünç)
+- TBK m.202-203, 444-447, 487-501, 515-519, 532-545, 547-554, 555-560, 561-580
+- Fikri mülkiyet mevzuatı
+- Borsa, sergi, panayır, antrepo
+- Bankalar, kredi kuruluşları, finansal kurumlar
+- İstisna: Ticari işletmeyi ilgilendirmeyen havale, vedia, fikir ve sanat eserleri
+
+**TTK m.5 — Asliye Ticaret Mahkemesi Görev**
+- Tüm ticari davalar + ticari nitelikte çekişmesiz yargı işleri
+- Asliye ticaret mahkemesi yoksa → asliye hukuk mahkemesi davaya devam eder (görevsizlik kararı gerekmez)
+
+**TTK m.4/2 — Basit Yargılama Usulü**
+- Miktar veya değeri 1.000.000 TL'yi geçmeyen ticari davalarda basit yargılama usulü uygulanır
+- Bu sınır HMK ek m.1'e göre artırılır
+
+**7036 m.5 — İş Mahkemesi Görev**
+- İş sözleşmesine dayanan her türlü işçi/işveren alacağı
+- SGK / Türkiye İş Kurumu kararlarına itiraz
+- İş kazası / meslek hastalığı tazminat
+
+**6502 m.73 — Tüketici Mahkemesi Görev**
+- Tüketici işlemlerinden doğan uyuşmazlıklar
+- Tüketici hakem heyeti: 30.000 TL altı (6502 m.68)
+
+**4787 sy. Kanun — Aile Mahkemesi**
+- Aile hukukundan doğan dava ve işler
+
+### B) Kesin Yetki Halleri
+
+| Kural | Madde | Kapsam |
+|---|---|---|
+| Taşınmaz davaları | HMK m.12 | Taşınmazın aynına ilişkin davalar, taşınmazın bulunduğu yer |
+| Miras davaları | HMK m.11 | Terekenin paylaşımı, miras sebebiyle istihkak, vasiyet, ölüme bağlı tasarruf iptali → mirasbırakanın son yerleşim yeri |
+| Tüzel kişi iç ilişki | HMK m.14/2 | Ortaklık, dernek, vakıf iç ilişki → tüzel kişinin merkezinin bulunduğu yer |
+| Can sigortası | HMK m.15/2 | Sigortalının, lehtarın yerleşim yeri |
+
+### C) Arabuluculuk Dava Şartı Kapsamı
+
+**İş Davaları (7036 m.3):**
+- Bireysel veya toplu iş sözleşmesine dayanan işçi/işveren alacağı ve tazminat → ZORUNLU
+- İş kazası ve meslek hastalığından kaynaklanan maddi/manevi tazminat ve SGK rücu → MUAF
+- Arabuluculuk süresi: 3 hafta (+ 1 hafta uzatma)
+
+**Ticari Davalar (TTK m.5/A):**
+- Konusu para olan alacak, tazminat, itirazın iptali, menfi tespit, istirdat → ZORUNLU
+- Arabuluculuk süresi: 6 hafta (+ 2 hafta uzatma)
+
+**Tüketici Davaları (6502 m.73/A):**
+- Tüketici mahkemelerinde görülen uyuşmazlıklar → ZORUNLU
+- MUAF: Tüketici hakem heyeti zorunlu olan uyuşmazlıklar (30.000 TL altı)
+- MUAF: Tüketici örgütlerinin açtığı davalar
+- MUAF: Taşınmazın aynından doğan tüketici uyuşmazlıkları
+- Arabuluculuk süresi: 3 hafta (+ 1 hafta uzatma)
+
+**Kira, Ortaklık Giderilmesi, Kat Mülkiyeti, Komşuluk (6325 m.18/B) — 01.09.2023'ten itibaren:**
+- Kiralanan taşınmazların İİK m.272+ tahliyesi HARİÇ
+- Arabuluculuk süresi: 3 hafta (+ 1 hafta uzatma)
+
+### D) Harç Bilgileri
+
+Harçlar Kanunu (492 sy.) ekli tarifelerle çalışır. Spesifik TL tutarları her yıl
+Harçlar Kanunu Genel Tebliği ile güncellenir (Resmi Gazete).
+
+**Harç Yapısı:**
+- (1) sayılı tarife: Yargı harçları (başvurma harcı, karar ve ilam harcı)
+- Başvurma harcı: Maktu (yıllık güncellenir)
+- Karar ve ilam harcı: Nispi (binde 68,31) veya maktu
+- Peşin harç: Nispi harcın 1/4'ü dava açılırken ödenir
+- İş mahkemesinde işçi harçtan muaf (5521 eski / 7036 yeni)
+
+**Not:** 2025/2026 harç tutarları için Harçlar Kanunu Genel Tebliği'nin her yıl
+Ocak ayında yayımlanan güncel versiyonu kontrol edilmeli. Uygulama içinde
+`src/data/harclar.ts` dosyasında yıl bazlı sabit olarak tutulacak.
+
+---
+
+## VERİ GÜNCELLİK STRATEJİSİ
+
+### Problem
+Harç tutarları, arabuluculuk kapsamı, görev kuralları ve parasal sınırlar
+kanun değişiklikleri ve yıllık tebliğlerle değişir. Verilerin güncel kalması kritik.
+
+### Strateji: 3 Katmanlı Güncelleme
+
+**Katman 1 — Yıllık Zorunlu Güncelleme (Her Ocak)**
+- Harçlar Kanunu Genel Tebliği → `src/data/harclar.ts` güncelle
+- Asgari ücret değişikliği → gider avansı tutarları
+- Tüketici hakem heyeti parasal sınır (yeniden değerleme oranıyla artar)
+- TTK m.4/2 basit yargılama parasal sınır
+- Bu güncellemeler **tek dosyada** (`harclar.ts`) yapılacak şekilde tasarlanacak
+
+**Katman 2 — Kanun Değişikliği Takibi (Gerektiğinde)**
+- Yeni arabuluculuk kapsamı eklenirse → `arabuluculuk` alanı güncelle
+- Görev kuralı değişirse (yeni mahkeme türü, görev devri) → ilgili bölüm dosyası
+- Kesin yetki halleri değişirse → ilgili dava türleri
+
+**Katman 3 — Uygulama İçi Bilgilendirme**
+- Her veri dosyasının başına `SON_GUNCELLEME` tarihi eklenecek
+- Uygulama footer'ında "Veriler [tarih] itibarıyla günceldir" notu
+- README'de güncelleme prosedürü dokümante edilecek
+
+### Teknik Uygulama
+
+```typescript
+// src/data/harclar.ts
+export const HARC_YILI = 2025;
+export const SON_GUNCELLEME = "2025-01-15";
+
+// Yıl değişince sadece bu sabitleri güncelle:
+export const BASVURMA_HARCI = 427.60;        // Maktu
+export const NISPI_HARC_ORANI = 0.06831;     // Binde 68,31
+export const PESIN_HARC_CARPANI = 0.25;      // Nispi harcın 1/4'ü
+
+export const TUKETICI_HAKEM_SINIRI = 30_000; // 6502 m.68
+export const TICARI_BASIT_YARGILAMA_SINIRI = 1_000_000; // TTK m.4/2
+```
+
+### Güncelleme Checklist'i (Her Ocak)
+
+```
+[ ] Harçlar Kanunu Genel Tebliği yayımlandı mı? → harclar.ts güncelle
+[ ] Asgari ücret açıklandı mı? → gider avansı güncelle
+[ ] Yeniden değerleme oranı açıklandı mı? → parasal sınırlar güncelle
+[ ] Arabuluculuk kapsamında değişiklik var mı?
+[ ] HMK/TTK/İşK/TüketiciK'da değişiklik var mı?
+[ ] Güncelleme tarihi bilgisini ayarla
+```
+
+---
+
 ## NOTLAR
 
 - **Veri girişi en kritik ve en uzun sürecek iş.** Her dava türü için görevli mahkeme, yetkili mahkeme, harç, masraf, vekaletname, belge listesi, HMK maddeleri tek tek girilecek.
@@ -379,3 +534,4 @@ FAZ 11 → Deploy ............................ 1 oturum
 - **Veritabanı YOK** — tüm veri TypeScript dosyalarında statik olarak tutulacak.
 - **Yıllık güncelleme:** Harç tarifeleri her Ocak'ta güncellenir. `harclar.ts` tek dosyada tutulacak.
 - **Arabuluculuk dava şartı:** İş, ticari alacak, tüketici, kira, ortaklığın giderilmesi, kat mülkiyeti davalarında MUTLAKA uyarı verilecek.
+- **Mevzuat verileri 20.03.2026 tarihinde Mevzuat MCP ile çekilmiştir.** HMK 6100, TTK 6102, İş Mahkemeleri 7036, Tüketici 6502, Arabuluculuk 6325, Harçlar 492 kanunları taranmıştır.

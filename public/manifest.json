@@ -1,0 +1,24 @@
+{
+  "name": "Usul Hukuku - Dava Rehberi",
+  "short_name": "Usul Hukuku",
+  "description": "HMK'ya gore gorevli/yetkili mahkeme, harclar, belgeler ve checklist rehberi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
