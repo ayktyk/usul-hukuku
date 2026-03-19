@@ -2,8 +2,15 @@ import type { DavaTuru } from "@/lib/types";
 import type { DavaKategorisi } from "@/lib/types";
 import { bolum01AsliyeHukuk } from "./bolum01-asliye-hukuk";
 import { bolum02SulhHukuk } from "./bolum02-sulh-hukuk";
+import { bolum03IsMahkemesi } from "./bolum03-is-mahkemesi";
+import { bolum04AileMahkemesi } from "./bolum04-aile-mahkemesi";
 
-export const tumDavalar: DavaTuru[] = [...bolum01AsliyeHukuk, ...bolum02SulhHukuk];
+export const tumDavalar: DavaTuru[] = [
+  ...bolum01AsliyeHukuk,
+  ...bolum02SulhHukuk,
+  ...bolum03IsMahkemesi,
+  ...bolum04AileMahkemesi,
+];
 
 const ALT_KATEGORI_ADLARI: Partial<Record<DavaKategorisi, Record<string, string>>> = {
   "asliye-hukuk": {
@@ -22,6 +29,21 @@ const ALT_KATEGORI_ADLARI: Partial<Record<DavaKategorisi, Record<string, string>
     "miras-isleri": "Miras Isleri",
     "cekismesiz-yargi": "Cekismesiz Yargi Isleri",
     "kat-mulkiyeti": "Kat Mulkiyeti Davalari",
+  },
+  "is-mahkemesi": {
+    "iscilik-alacaklari": "Iscilik Alacagi Davalari",
+    "is-guvencesi": "Is Guvencesi Davalari",
+    "is-kazasi": "Is Kazasi ve Meslek Hastaligi Davalari",
+    "sosyal-guvenlik": "Sosyal Guvenlik Davalari",
+    "diger-is-davalari": "Diger Is Davalari",
+  },
+  "aile-mahkemesi": {
+    bosanma: "Bosanma Davalari",
+    nafaka: "Nafaka Davalari",
+    "velayet-cocuk": "Velayet ve Cocukla Ilgili Davalar",
+    "mal-rejimi": "Mal Rejimi Davalari",
+    "soybagi-evlat-edinme": "Soybagi ve Evlat Edinme",
+    "diger-aile": "Diger Aile Hukuku Davalari",
   },
 };
 
