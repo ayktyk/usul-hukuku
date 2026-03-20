@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import type { KategoriTanimi } from "@/data/kategoriler";
+import type { DavaKategorisi } from "@/lib/types";
 
 interface DavaAramaSonucu {
   id: string;
@@ -23,6 +24,8 @@ interface SearchResponse {
   kategoriIds: string[];
 }
 
+type SearchMode = "all" | "title" | "article";
+
 interface AnaSayfaAramaProps {
   kategoriler: KategoriTanimi[];
   toplamDavaSayisi: number;
@@ -33,7 +36,14 @@ export function AnaSayfaArama({
   toplamDavaSayisi,
 }: AnaSayfaAramaProps) {
   const hizliAramalar = ["AYM", "AIHM", "SGK", "ZMSS", "HAGB", "ise iade"];
+  const aramaModlari: Array<{ id: SearchMode; label: string }> = [
+    { id: "all", label: "Tum alanlar" },
+    { id: "title", label: "Sadece dava adi" },
+    { id: "article", label: "Sadece madde no" },
+  ];
   const [arama, setArama] = useState("");
+  const [seciliKategori, setSeciliKategori] = useState<DavaKategorisi | null>(null);
+  const [aramaModu, setAramaModu] = useState<SearchMode>("all");
   const [sonuclar, setSonuclar] = useState<SearchResponse>({
     davaSonuclari: [],
     kategoriIds: [],
@@ -55,8 +65,16 @@ export function AnaSayfaArama({
 
     const controller = new AbortController();
     setYukleniyor(true);
+    const params = new URLSearchParams({
+      q: query,
+      mode: aramaModu,
+    });
 
-    void fetch(`/api/search?q=${encodeURIComponent(query)}`, {
+    if (seciliKategori) {
+      params.set("kategori", seciliKategori);
+    }
+
+    void fetch(`/api/search?${params.toString()}`, {
       signal: controller.signal,
     })
       .then(async (response) => {
@@ -86,16 +104,20 @@ export function AnaSayfaArama({
       });
 
     return () => controller.abort();
-  }, [ertelenmisArama]);
+  }, [aramaModu, ertelenmisArama, seciliKategori]);
 
   const filtrelenmisKategoriler = useMemo(() => {
+    if (seciliKategori && !ertelenmisArama.trim()) {
+      return kategoriler.filter((kategori) => kategori.id === seciliKategori);
+    }
+
     if (!ertelenmisArama.trim()) return kategoriler;
 
     const kategoriIdSet = new Set(sonuclar.kategoriIds);
     return kategoriler.filter((kategori) => kategoriIdSet.has(kategori.id));
-  }, [ertelenmisArama, kategoriler, sonuclar.kategoriIds]);
+  }, [ertelenmisArama, kategoriler, seciliKategori, sonuclar.kategoriIds]);
 
-  const aktifAramaVar = ertelenmisArama.trim().length > 0;
+  const aramaMetniVar = ertelenmisArama.trim().length > 0;
 
   return (
     <>
@@ -130,9 +152,65 @@ export function AnaSayfaArama({
             </button>
           ))}
         </div>
+        <div className="mt-4 space-y-3">
+          <div>
+            <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Arama modu
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {aramaModlari.map((mod) => (
+                <button
+                  key={mod.id}
+                  type="button"
+                  onClick={() => setAramaModu(mod.id)}
+                  className={
+                    aramaModu === mod.id
+                      ? "rounded-full border border-foreground bg-foreground px-3 py-1 text-xs text-background"
+                      : "rounded-full border border-border/70 px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/20 hover:bg-muted hover:text-foreground"
+                  }
+                >
+                  {mod.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              Kategori filtresi
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setSeciliKategori(null)}
+                className={
+                  seciliKategori === null
+                    ? "rounded-full border border-foreground bg-foreground px-3 py-1 text-xs text-background"
+                    : "rounded-full border border-border/70 px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/20 hover:bg-muted hover:text-foreground"
+                }
+              >
+                Tum kategoriler
+              </button>
+              {kategoriler.map((kategori) => (
+                <button
+                  key={kategori.id}
+                  type="button"
+                  onClick={() => setSeciliKategori(kategori.id)}
+                  className={
+                    seciliKategori === kategori.id
+                      ? "rounded-full border border-foreground bg-foreground px-3 py-1 text-xs text-background"
+                      : "rounded-full border border-border/70 px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/20 hover:bg-muted hover:text-foreground"
+                  }
+                >
+                  {kategori.ad}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
-      {aktifAramaVar ? (
+      {aramaMetniVar ? (
         <div className="space-y-8">
           <section className="space-y-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
@@ -176,13 +254,13 @@ export function AnaSayfaArama({
                 ))}
               </div>
             ) : (
-              <Card className="border-dashed">
-                <CardContent className="py-8 text-center text-sm text-muted-foreground">
-                  {yukleniyor
-                    ? "Arama sonuclari hazirlaniyor."
-                    : "Eslesen dava bulunamadi. Daha genel bir ifade, kategori adi veya madde numarasi deneyin."}
-                </CardContent>
-              </Card>
+                <Card className="border-dashed">
+                  <CardContent className="py-8 text-center text-sm text-muted-foreground">
+                    {yukleniyor
+                      ? "Arama sonuclari hazirlaniyor."
+                      : "Eslesen dava bulunamadi. Kategori filtresini kaldirin veya farkli bir ifade deneyin."}
+                  </CardContent>
+                </Card>
             )}
           </section>
 
@@ -205,7 +283,7 @@ export function AnaSayfaArama({
           </section>
         </div>
       ) : (
-        <KategoriGrid kategoriler={kategoriler} />
+        <KategoriGrid kategoriler={filtrelenmisKategoriler} />
       )}
 
       <p className="mt-12 text-center text-xs text-muted-foreground">

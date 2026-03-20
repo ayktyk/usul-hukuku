@@ -1,12 +1,19 @@
 import { getAltKategoriLabel, tumDavalar } from "@/data";
 import { KATEGORILER } from "@/data/kategoriler";
-import type { DavaTuru } from "@/lib/types";
+import type { DavaKategorisi, DavaTuru } from "@/lib/types";
 
 export interface DavaAramaSonucu {
   dava: DavaTuru;
   kategoriAdi: string;
   altKategoriAdi: string;
   score: number;
+}
+
+export type SearchMode = "all" | "title" | "article";
+
+export interface SearchOptions {
+  kategori?: DavaKategorisi;
+  mode?: SearchMode;
 }
 
 const TOKEN_EXPANSIONS: Record<string, string[]> = {
@@ -186,27 +193,42 @@ function scoreTokenMatch(haystack: string, tokens: string[]): number {
 }
 
 export function searchDavalar(query: string, limit = 12): DavaAramaSonucu[] {
+  return searchDavalarWithOptions(query, { mode: "all" }, limit);
+}
+
+export function searchDavalarWithOptions(
+  query: string,
+  options: SearchOptions = {},
+  limit = 12,
+): DavaAramaSonucu[] {
   const normalizedQuery = normalizeText(query);
   if (!normalizedQuery) return [];
 
+  const mode = options.mode ?? "all";
   const queryPhrases = buildPhraseVariants(query);
   const tokenVariants = buildTokenVariants(query);
 
   return tumDavalar
+    .filter((dava) => !options.kategori || dava.kategori === options.kategori)
     .map((dava) => {
       const kategori = KATEGORILER.find((item) => item.id === dava.kategori);
       const kategoriAdi = kategori?.ad ?? dava.kategori;
       const altKategoriAdi = getAltKategoriLabel(dava.kategori, dava.altKategori);
 
-      const alanlar = [
-        { value: normalizeText(dava.ad), weight: 1 },
-        { value: normalizeText(kategoriAdi), weight: 0.45 },
-        { value: normalizeText(altKategoriAdi), weight: 0.45 },
-        { value: normalizeText(dava.gorevliMahkeme.mahkeme), weight: 0.35 },
-        { value: normalizeText(dava.ozelKanunlar?.join(" ") ?? ""), weight: 0.2 },
-        { value: normalizeText(`${dava.maddeNo}`), weight: 0.35 },
-        { value: normalizeText(dava.id), weight: 0.25 },
-      ];
+      const alanlar =
+        mode === "title"
+          ? [{ value: normalizeText(dava.ad), weight: 1.2 }]
+          : mode === "article"
+            ? [{ value: normalizeText(`${dava.maddeNo}`), weight: 1.4 }]
+            : [
+                { value: normalizeText(dava.ad), weight: 1 },
+                { value: normalizeText(kategoriAdi), weight: 0.45 },
+                { value: normalizeText(altKategoriAdi), weight: 0.45 },
+                { value: normalizeText(dava.gorevliMahkeme.mahkeme), weight: 0.35 },
+                { value: normalizeText(dava.ozelKanunlar?.join(" ") ?? ""), weight: 0.2 },
+                { value: normalizeText(`${dava.maddeNo}`), weight: 0.35 },
+                { value: normalizeText(dava.id), weight: 0.25 },
+              ];
 
       const score = alanlar.reduce((toplam, alan) => {
         const phraseScore = scorePhraseMatch(alan.value, queryPhrases);
@@ -230,9 +252,19 @@ export function searchDavalar(query: string, limit = 12): DavaAramaSonucu[] {
 }
 
 export function searchKategoriIds(query: string): string[] {
+  return searchKategoriIdsWithOptions(query, { mode: "all" });
+}
+
+export function searchKategoriIdsWithOptions(
+  query: string,
+  options: SearchOptions = {},
+): string[] {
   const normalizedQuery = normalizeText(query);
   if (!normalizedQuery) return [];
 
+  if (options.kategori) return [options.kategori];
+
+  const mode = options.mode ?? "all";
   const queryPhrases = buildPhraseVariants(query);
   const tokenVariants = buildTokenVariants(query);
 
@@ -240,11 +272,13 @@ export function searchKategoriIds(query: string): string[] {
     .map((kategori) => ({
       id: kategori.id,
       score:
-        scorePhraseMatch(normalizeText(kategori.ad), queryPhrases) +
-        scoreTokenMatch(normalizeText(kategori.ad), tokenVariants) +
-        (scorePhraseMatch(normalizeText(kategori.aciklama), queryPhrases) +
-          scoreTokenMatch(normalizeText(kategori.aciklama), tokenVariants)) *
-          0.5,
+        mode === "article"
+          ? 0
+          : scorePhraseMatch(normalizeText(kategori.ad), queryPhrases) +
+            scoreTokenMatch(normalizeText(kategori.ad), tokenVariants) +
+            (scorePhraseMatch(normalizeText(kategori.aciklama), queryPhrases) +
+              scoreTokenMatch(normalizeText(kategori.aciklama), tokenVariants)) *
+              0.5,
     }))
     .filter((kategori) => kategori.score > 0)
     .sort((a, b) => b.score - a.score)

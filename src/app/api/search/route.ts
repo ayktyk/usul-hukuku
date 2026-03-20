@@ -1,17 +1,30 @@
-import { searchDavalar, searchKategoriIds } from "@/lib/search";
+import { searchDavalarWithOptions, searchKategoriIdsWithOptions, type SearchMode } from "@/lib/search";
+import type { DavaKategorisi } from "@/lib/types";
+
+const SEARCH_MODES: SearchMode[] = ["all", "title", "article"];
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get("q")?.trim() ?? "";
+  const kategori = searchParams.get("kategori")?.trim() as DavaKategorisi | null;
+  const modeParam = searchParams.get("mode")?.trim() as SearchMode | null;
+  const mode = modeParam && SEARCH_MODES.includes(modeParam) ? modeParam : "all";
 
   if (!query) {
     return Response.json({
       davaSonuclari: [],
-      kategoriIds: [],
+      kategoriIds: kategori ? [kategori] : [],
     });
   }
 
-  const davaSonuclari = searchDavalar(query, 12).map((sonuc) => ({
+  const davaSonuclari = searchDavalarWithOptions(
+    query,
+    {
+      kategori: kategori ?? undefined,
+      mode,
+    },
+    12,
+  ).map((sonuc) => ({
     id: sonuc.dava.id,
     ad: sonuc.dava.ad,
     maddeNo: sonuc.dava.maddeNo,
@@ -22,6 +35,9 @@ export async function GET(request: Request) {
 
   return Response.json({
     davaSonuclari,
-    kategoriIds: searchKategoriIds(query),
+    kategoriIds: searchKategoriIdsWithOptions(query, {
+      kategori: kategori ?? undefined,
+      mode,
+    }),
   });
 }
