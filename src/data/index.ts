@@ -4,12 +4,24 @@ import { bolum01AsliyeHukuk } from "./bolum01-asliye-hukuk";
 import { bolum02SulhHukuk } from "./bolum02-sulh-hukuk";
 import { bolum03IsMahkemesi } from "./bolum03-is-mahkemesi";
 import { bolum04AileMahkemesi } from "./bolum04-aile-mahkemesi";
+import { bolum11ArabuluculukTahkim } from "./bolum11-arabuluculuk-tahkim";
+import { bolum12Kadastro } from "./bolum12-kadastro";
+import { bolum13Anayasa } from "./bolum13-anayasa";
+import { bolum14Aihm } from "./bolum14-aihm";
+import { bolum15Yabancilar } from "./bolum15-yabancilar";
+import { bolum16NoterDiger } from "./bolum16-noter-diger";
 
 export const tumDavalar: DavaTuru[] = [
   ...bolum01AsliyeHukuk,
   ...bolum02SulhHukuk,
   ...bolum03IsMahkemesi,
   ...bolum04AileMahkemesi,
+  ...bolum11ArabuluculukTahkim,
+  ...bolum12Kadastro,
+  ...bolum13Anayasa,
+  ...bolum14Aihm,
+  ...bolum15Yabancilar,
+  ...bolum16NoterDiger,
 ];
 
 const ALT_KATEGORI_ADLARI: Partial<Record<DavaKategorisi, Record<string, string>>> = {
@@ -44,6 +56,28 @@ const ALT_KATEGORI_ADLARI: Partial<Record<DavaKategorisi, Record<string, string>
     "mal-rejimi": "Mal Rejimi Davalari",
     "soybagi-evlat-edinme": "Soybagi ve Evlat Edinme",
     "diger-aile": "Diger Aile Hukuku Davalari",
+  },
+  "arabuluculuk-tahkim": {
+    arabuluculuk: "Arabuluculuk Surecleri",
+    tahkim: "Tahkim Davalari",
+  },
+  kadastro: {
+    kadastro: "Kadastro Davalari",
+  },
+  "anayasa-mahkemesi": {
+    "bireysel-basvuru": "Bireysel Basvuru",
+  },
+  aihm: {
+    "bireysel-basvuru": "AIHM Basvurulari",
+  },
+  "yabancilar-hukuku": {
+    "yabancilar-idare": "Yabancilar Hukuku ve Idari Basvurular",
+    "tanima-tenfiz-lahey": "Tanima, Tenfiz ve Lahey Davalari",
+  },
+  "noter-diger": {
+    ihtarnameler: "Ihtarnameler",
+    sozlesmeler: "Sozlesmeler",
+    "diger-islemler": "Diger Hazirlik ve Koruma Islemleri",
   },
 };
 
