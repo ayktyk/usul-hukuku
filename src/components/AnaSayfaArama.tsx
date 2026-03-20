@@ -32,6 +32,7 @@ export function AnaSayfaArama({
   kategoriler,
   toplamDavaSayisi,
 }: AnaSayfaAramaProps) {
+  const hizliAramalar = ["AYM", "AIHM", "SGK", "ZMSS", "HAGB", "ise iade"];
   const [arama, setArama] = useState("");
   const [sonuclar, setSonuclar] = useState<SearchResponse>({
     davaSonuclari: [],
@@ -117,6 +118,18 @@ export function AnaSayfaArama({
           onChange={(e) => setArama(e.target.value)}
           className="pl-10"
         />
+        <div className="mt-3 flex flex-wrap gap-2">
+          {hizliAramalar.map((terim) => (
+            <button
+              key={terim}
+              type="button"
+              onClick={() => setArama(terim)}
+              className="rounded-full border border-border/70 px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/20 hover:bg-muted hover:text-foreground"
+            >
+              {terim}
+            </button>
+          ))}
+        </div>
       </div>
 
       {aktifAramaVar ? (
