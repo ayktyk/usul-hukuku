@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { getAltKategoriLabel, getDavaById } from "@/data";
+import { HarcHesaplamaPanel } from "@/components/HarcHesaplamaPanel";
 import { KATEGORILER } from "@/data/kategoriler";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,10 +23,6 @@ export default function DavaDetaySayfasi({ params }: DavaDetaySayfasiProps) {
 
   const kategori = KATEGORILER.find((item) => item.id === dava.kategori);
   const altKategoriAdi = getAltKategoriLabel(dava.kategori, dava.altKategori);
-  const harcAciklama =
-    dava.harclar.kararIlamHarci === "nispi"
-      ? `Binde ${dava.harclar.nispiOran ?? 0} nispi karar ve ilam harci`
-      : "Maktu karar ve ilam harci";
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8">
@@ -132,24 +129,7 @@ export default function DavaDetaySayfasi({ params }: DavaDetaySayfasiProps) {
             <CardTitle>Harc ve Masraf</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
-            <div>
-              <p className="font-medium">Basvuru harci</p>
-              <p className="text-muted-foreground">
-                {formatPara(dava.harclar.basvuruHarci)}
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Karar ve ilam harci</p>
-              <p className="text-muted-foreground">{harcAciklama}</p>
-              {dava.harclar.pesinHarcOran ? (
-                <p className="text-muted-foreground">
-                  Pesin harc orani: %{dava.harclar.pesinHarcOran * 100}
-                </p>
-              ) : null}
-              {dava.harclar.muafiyet ? (
-                <p className="text-muted-foreground">{dava.harclar.muafiyet}</p>
-              ) : null}
-            </div>
+            <HarcHesaplamaPanel harclar={dava.harclar} />
             <div>
               <p className="font-medium">Tahmini yargilama gideri</p>
               <p className="text-muted-foreground">
