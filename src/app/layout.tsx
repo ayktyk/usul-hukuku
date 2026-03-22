@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
+
+import { SayfaAnimasyonSarmalayici } from "@/components/SayfaAnimasyonSarmalayici";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -51,7 +55,13 @@ export default function RootLayout({
           geistMono.variable,
         )}
       >
-        {children}
+        <div className="fixed right-4 top-4 z-40">
+          <ThemeToggle />
+        </div>
+        <SayfaAnimasyonSarmalayici>
+          {children}
+        </SayfaAnimasyonSarmalayici>
+        <PWAInstallPrompt />
         <ServiceWorkerRegistrar />
       </body>
     </html>

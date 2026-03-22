@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { getAltKategoriLabel, getDavaById } from "@/data";
 import { HarcHesaplamaPanel } from "@/components/HarcHesaplamaPanel";
+import { ChecklistPanel } from "@/components/ChecklistPanel";
+import { KesinYetkiUyari } from "@/components/KesinYetkiUyari";
+import { ArabuluculukUyari } from "@/components/ArabuluculukUyari";
+import { VekaletnameBadge } from "@/components/VekaletnameBadge";
 import { KATEGORILER } from "@/data/kategoriler";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -80,12 +84,13 @@ export default function DavaDetaySayfasi({ params }: DavaDetaySayfasiProps) {
                 ))}
               </ul>
             ) : null}
-            {dava.yetkiliMahkeme.kesinYetki ? (
-              <Badge variant={dava.yetkiliMahkeme.kesinYetkiMi ? "destructive" : "outline"}>
+            {dava.yetkiliMahkeme.kesinYetki && !dava.yetkiliMahkeme.kesinYetkiMi ? (
+              <Badge variant="outline">
                 {dava.yetkiliMahkeme.kesinYetki}
               </Badge>
             ) : null}
             <p className="text-muted-foreground">{dava.yetkiliMahkeme.aciklama}</p>
+            <KesinYetkiUyari yetkiliMahkeme={dava.yetkiliMahkeme} />
           </CardContent>
         </Card>
 
@@ -94,6 +99,7 @@ export default function DavaDetaySayfasi({ params }: DavaDetaySayfasiProps) {
             <CardTitle>Yargilama ve Arabuluculuk</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
+            <ArabuluculukUyari arabuluculuk={dava.arabuluculuk} />
             <div>
               <p className="font-medium">Yargilama usulu</p>
               <p className="text-muted-foreground">{formatUsul(dava.yargilamaUsulu)}</p>
@@ -110,7 +116,7 @@ export default function DavaDetaySayfasi({ params }: DavaDetaySayfasiProps) {
               {dava.arabuluculuk.yasalDayanak ? (
                 <Badge variant="outline">{dava.arabuluculuk.yasalDayanak}</Badge>
               ) : null}
-              {dava.arabuluculuk.aciklama ? (
+              {!dava.arabuluculuk.davaSarti && dava.arabuluculuk.aciklama ? (
                 <p className="mt-2 text-muted-foreground">{dava.arabuluculuk.aciklama}</p>
               ) : null}
             </div>
@@ -144,74 +150,16 @@ export default function DavaDetaySayfasi({ params }: DavaDetaySayfasiProps) {
           <CardHeader>
             <CardTitle>Ozel Vekaletname</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-2 text-sm">
-            <Badge variant={dava.ozelVekaletname.gerekliMi ? "destructive" : "outline"}>
-              {dava.ozelVekaletname.gerekliMi ? "Gerekli" : "Genel vekaletname yeterli"}
-            </Badge>
-            {dava.ozelVekaletname.neden ? (
-              <p className="text-muted-foreground">{dava.ozelVekaletname.neden}</p>
-            ) : null}
-            {dava.ozelVekaletname.yasalDayanak ? (
-              <p className="text-muted-foreground">{dava.ozelVekaletname.yasalDayanak}</p>
-            ) : null}
-            {dava.ozelVekaletname.icerik?.length ? (
-              <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
-                {dava.ozelVekaletname.icerik.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            ) : null}
+          <CardContent>
+            <VekaletnameBadge bilgi={dava.ozelVekaletname} />
           </CardContent>
         </Card>
 
-        <Card className="md:col-span-2">
-          <CardHeader>
-            <CardTitle>Muvekkilden Alinacak Bilgiler</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-3 text-sm">
-              {dava.muvekkilBilgileri.map((item) => (
-                <li key={item.bilgi} className="rounded-lg border border-border/70 px-4 py-3">
-                  <div className="mb-1 flex flex-wrap items-center gap-2">
-                    <span className="font-medium">{item.bilgi}</span>
-                    <Badge variant={item.zorunlu ? "secondary" : "outline"}>
-                      {item.zorunlu ? "Zorunlu" : "Opsiyonel"}
-                    </Badge>
-                  </div>
-                  {item.aciklama ? (
-                    <p className="text-muted-foreground">{item.aciklama}</p>
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="md:col-span-2">
-          <CardHeader>
-            <CardTitle>Gerekli Belgeler</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-3 text-sm">
-              {dava.gerekliBelgeler.map((belge) => (
-                <li key={belge.belge} className="rounded-lg border border-border/70 px-4 py-3">
-                  <div className="mb-1 flex flex-wrap items-center gap-2">
-                    <span className="font-medium">{belge.belge}</span>
-                    <Badge variant={belge.zorunlu ? "secondary" : "outline"}>
-                      {belge.zorunlu ? "Zorunlu" : "Opsiyonel"}
-                    </Badge>
-                  </div>
-                  {belge.nereden ? (
-                    <p className="text-muted-foreground">Temin yeri: {belge.nereden}</p>
-                  ) : null}
-                  {belge.aciklama ? (
-                    <p className="text-muted-foreground">{belge.aciklama}</p>
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
+        <ChecklistPanel
+          davaId={dava.id}
+          muvekkilBilgileri={dava.muvekkilBilgileri}
+          gerekliBelgeler={dava.gerekliBelgeler}
+        />
 
         <Card className="md:col-span-2">
           <CardHeader>
